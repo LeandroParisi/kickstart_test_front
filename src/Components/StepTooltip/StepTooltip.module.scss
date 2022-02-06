@@ -1,0 +1,33 @@
+@import '../../assets/scss/colors.scss';
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/globals.module.scss';
+@import '../../assets/scss/fonts.scss';
+
+.container {
+  @include flexBox(column, space-around);
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  z-index: 5;
+  min-width: 380px;
+  max-width: 380px;
+  min-height: 300px;
+  max-height: 300px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.6em;
+
+  .footer {
+    @include flexBox(row, space-between);
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .unClickable {
+    opacity: 40%
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../assets/scss/colors.scss';
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/globals.module.scss';
+@import '../../assets/scss/fonts.scss';
+
+.container {
+  @include flexBox();
+  position: absolute;
+  height: calc(100vh - #{$header-height} - 50px);
+  width: calc(100vw - 50px);
+
+  .imageContainer {
+    .indicator {
+
+      .iconContainer {
+        background-color: white;
+        transform: translateY(-160px); 
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: 70px;
+        border-radius: 100%;
+        z-index: 10;
+      }
+    }
+  }
+}
